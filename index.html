@@ -1,4 +1,4 @@
-﻿<!Doctype html>
+<!Doctype html>
 <html>
 <head>
 	<title>Menu CSS jQuery</title>
@@ -7,9 +7,10 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script>
 	$(document).ready(function(){
-		$('#menu ul li a').css('background','#ADFF2F')
-		$('#menu ul li a').css('color','#1E90FF')
-		$('#menu ul li span').css ('color','#1E90FF')/*alterar*/
+		$('#menu ul li a').css('background','#FFFAFA'); 
+		$('#menu ul li a').css('color','#8B4513'); 
+		$('#menu ul li span').css ('color','red');
+		$("#menu ul li a").css('color','#7CFC00')
 		$('#menu ul li').prepend('<span></span>');
 			$('#menu ul li').each(function(){
 				var texto= $(this).find('a').text();
@@ -28,7 +29,7 @@
 	</script>
 
 	<style>
-		body{background:black;
+		body{background:grey;
 			}
 		#menu{width:700px;
 			margin:auto;
@@ -46,9 +47,9 @@
 		#menu ul li a, #menu ul li span{width:100px;
 			padding:10px 20px;
 			height:18px;
-			color:#000000;
+			color:#00008B;/*texto link azul */
 			/*background:url("images/Degrade_img.jpg") repeat-x; */
-            background:red;
+            background:black;/* background */
 			text-decoration:none;
 			overflow:hidden;
 			text-align:center;
